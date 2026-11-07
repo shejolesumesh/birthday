@@ -1,4 +1,3 @@
-
 (() => {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const isSmallScreen = () => window.innerWidth <= 600;
@@ -63,7 +62,6 @@
   if (!reduceMotion) requestAnimationFrame(drawStars);
   else drawStarsStatic();
 
-  /* ================= CONFETTI ================= */
   const fxCanvas = document.getElementById("confetti-canvas");
   const fxCtx = fxCanvas.getContext("2d");
   let fxW, fxH, fxDpr, confetti = [];
